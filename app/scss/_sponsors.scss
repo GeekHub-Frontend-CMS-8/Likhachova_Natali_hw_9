@@ -9,9 +9,22 @@
     padding: 10px 30px;
   }
 }
+
+@media screen and (max-width: 900px){
+  .sponsors{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    .sponsors_sign{
+      padding: 20px 30px;
+    }
+  }
+}
+
 @media screen and (max-width: 575.98px){
   .sponsors{
-    outline: 2px solid blue;
     display: flex;
     flex-direction: column;
     .sponsors_sign{

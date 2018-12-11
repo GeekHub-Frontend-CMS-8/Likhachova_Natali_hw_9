@@ -60,7 +60,6 @@
       background-color: transparent;
     }
     .hero_img-down{
-     outline: 2px solid #cc0000;
       padding: 60px;
     }
 
@@ -68,10 +67,10 @@
 }
 @media screen and (max-width: 900px){
   .top{
-    outline: 2px solid blue;
     width: 100%;
     .header{
-      .header_img{}
+      display: flex;
+      justify-content: space-around;
       .header_hamburger{
         padding-left: 0;
       }
@@ -85,15 +84,12 @@
         width: 300px;
         font-size: 12px;
       }
-      .hero_button{}
-      .hero_img-down{}
     }
   }
 }
 
 @media screen and (max-width: 575.98px){
   .top{
-    outline: 2px solid blue;
     .header{
       .header_img{}
       .header_hamburger{

@@ -80,9 +80,37 @@
     background-color: transparent;
   }
 }
+
+@media screen and (max-width: 900px){
+  .team{
+    .team_text{
+      p{
+        font-size: 13px;
+        padding: 20px 0;
+        line-height: 20px;
+      }
+      .service_white-line{
+        margin-bottom: 30px;
+      }
+    }
+    .team_list{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .team_list-box{
+        margin: 30px 5px 5px 5px;
+      }
+    }
+    .team_button{
+      margin-top: 40px;
+    }
+  }
+}
+
 @media screen and (max-width: 575.98px){
   .team{
-    outline: 2px solid blue;
     .team_text{
       p{
         font-size: 13px;

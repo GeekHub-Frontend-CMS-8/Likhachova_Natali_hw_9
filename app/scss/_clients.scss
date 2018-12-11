@@ -51,9 +51,27 @@
     }
   }
 }
+
+@media screen and (max-width: 900px){
+  .clients{
+    .clients_text{
+      p{
+        font-size: 13px;
+        padding: 20px 0;
+        line-height: 20px;
+      }
+    }
+    .clients_carousel{
+      .clients_carousel-text{
+        width: 700px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 575.98px){
   .clients{
-    outline: 2px solid blue;
     .clients_text{
       p{
         font-size: 13px;

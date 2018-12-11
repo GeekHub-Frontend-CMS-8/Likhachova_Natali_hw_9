@@ -23,6 +23,29 @@
   }
 }
 
+@media screen and (max-width: 900px){
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer_text{
+      display: flex;
+      flex-direction: column;
+      p{
+        font-size: 13px;
+        padding: 10px;
+      }
+    }
+    .footer_icons{
+      display: flex;
+      flex-direction: column-reverse;
+      p{
+        padding: 10px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 575.98px){
   .footer{
     display: flex;

@@ -94,9 +94,51 @@
     }
   }
 }
+
+@media screen and (max-width: 900px){
+  .pricing{
+    .pricing_text{
+      p{
+        font-size: 13px;
+        padding: 20px 0;
+        line-height: 20px;
+      }
+    }
+    .pricing_list{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap-reverse;
+      align-items: center;
+      justify-content: center;
+      .pricing_box{
+        width: 270px;
+        height: 400px;
+        .pricing_box-bottom{
+          .pricing_box-bottom-text-standard{
+            font-size: 13px;
+            padding: 30px 0;
+          }
+          .pricing_box-bottom-text-best{
+            font-size: 13px;
+            padding: 20px 0;
+            margin-bottom: -10px;
+          }
+          .pricing_box-bottom-text-vip{
+            font-size: 13px;
+            padding: 10px 0;
+            margin-bottom: -20px;
+          }
+          .pricing_box-button{
+            margin: 30px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 575.98px){
   .pricing{
-    outline: 2px solid blue;
     .pricing_text{
       p{
         font-size: 13px;

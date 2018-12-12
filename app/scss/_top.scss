@@ -20,6 +20,80 @@
         line-height: 36px;
         text-transform: uppercase;
       }
+      .top_test{
+        .hidden-menu {
+          display: block;
+          position: fixed;
+          list-style:none;
+          padding: 10px;
+          margin: 0;
+          box-sizing: border-box;
+          width: 200px;
+          background-color: #eee;
+          height: 100%;
+          top: 0;
+          right: -200px;
+          transition: right .2s;
+          z-index: 2;
+          -webkit-transform: translateZ(0);
+          -webkit-backface-visibility: hidden;
+        }
+        .hidden-menu-ticker {
+          display: none;
+        }
+        .btn-menu {
+          color: #fff;
+          padding: 5px;
+          position: fixed;
+          top: 5px;
+          right: 5px;
+          cursor: pointer;
+          transition: left .23s;
+          z-index: 3;
+          width: 25px;
+          -webkit-transform: translateZ(0);
+          -webkit-backface-visibility: hidden;
+        }
+        .btn-menu span {
+          display: block;
+          height: 5px;
+          background-color: #fff;
+          margin: 5px 0 0;
+          transition: all .1s linear .23s;
+          position: relative;
+        }
+        .hidden-menu{
+          color: #e8e8e8;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 36px;
+          font-weight: 700;
+          line-height: 40px;
+          a{
+            color: #40504B;
+            text-decoration: none;
+          }
+        }
+        .btn-menu span.first {
+          margin-top: 0;
+        }
+        .hidden-menu-ticker:checked ~ .btn-menu {
+          right: 200px;
+        }
+        .hidden-menu-ticker:checked ~ .hidden-menu {
+          right: 0;
+        }
+        .hidden-menu-ticker:checked ~ .btn-menu span.first {
+          -webkit-transform: rotate(45deg);
+          top: 10px;
+        }
+        .hidden-menu-ticker:checked ~ .btn-menu span.second {
+          opacity: 0;
+        }
+        .hidden-menu-ticker:checked ~ .btn-menu span.third {
+          -webkit-transform: rotate(-45deg);
+          top: -10px;
+        }
+      }
     }
   }
   .hero{
@@ -94,6 +168,12 @@
       .header_img{}
       .header_hamburger{
         padding-left: 0;
+        .top_test{
+          .hidden-menu{
+            font-size: 26px;
+            font-weight: 600;
+          }
+        }
       }
     }
     .hero{

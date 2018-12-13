@@ -360,7 +360,9 @@ table {
   .works .works_text p {
     font-size: 13px;
     padding: 20px 0;
-    line-height: 20px; } }
+    line-height: 20px; }
+  .works .works_foto .img-hover-text {
+    width: 80%; } }
 
 .clients {
   display: flex;

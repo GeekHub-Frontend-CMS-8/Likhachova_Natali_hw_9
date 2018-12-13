@@ -319,8 +319,42 @@ table {
     align-items: center;
     justify-content: center;
     padding: 40px 0 30px 0; }
-    .works .works_foto .works_foto_img {
-      zoom: 70%; }
+    .works .works_foto .img-hover-text {
+      width: 20%;
+      margin: 0;
+      position: relative; }
+      .works .works_foto .img-hover-text img {
+        width: 100%;
+        transition: .5s; }
+      .works .works_foto .img-hover-text figcaption {
+        position: absolute;
+        width: 80%;
+        bottom: 25%;
+        left: 10%;
+        padding: 10px;
+        box-sizing: border-box;
+        opacity: 0;
+        border-radius: 10px;
+        transition: .5s; }
+        .works .works_foto .img-hover-text figcaption .figcaption_text-top {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          color: #29323c;
+          line-height: 20px;
+          color: #fff; }
+        .works .works_foto .img-hover-text figcaption .figcaption_text-botton {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          color: #fff;
+          line-height: 36px;
+          opacity: 0.8;
+          line-height: 36px; }
+      .works .works_foto .img-hover-text:hover figcaption {
+        opacity: 1; }
+      .works .works_foto .img-hover-text:hover img {
+        filter: brightness(40%); }
 
 @media screen and (max-width: 575.98px) {
   .works .works_text p {

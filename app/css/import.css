@@ -481,6 +481,43 @@ table {
       width: 250px;
       margin: 50px 5px 65px 5px;
       background-color: #C3C8CB; }
+      .team .team_list .team_list-box .team_list-box-face .img-hover-text {
+        width: 100%;
+        margin: 0;
+        position: relative; }
+        .team .team_list .team_list-box .team_list-box-face .img-hover-text img {
+          width: 100%;
+          transition: .5s; }
+        .team .team_list .team_list-box .team_list-box-face .img-hover-text figcaption {
+          position: absolute;
+          width: 80%;
+          bottom: 25%;
+          left: 10%;
+          padding: 10px;
+          box-sizing: border-box;
+          opacity: 0;
+          border-radius: 10px;
+          transition: .5s; }
+          .team .team_list .team_list-box .team_list-box-face .img-hover-text figcaption .team_figcaption-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            color: #29323c;
+            line-height: 20px;
+            color: #fff;
+            margin-bottom: 15px; }
+          .team .team_list .team_list-box .team_list-box-face .img-hover-text figcaption .service_white-line::before {
+            content: '';
+            display: block;
+            height: 4px;
+            background-color: #C3C8CB;
+            margin-bottom: 40px;
+            margin-left: 60px;
+            width: 60px; }
+        .team .team_list .team_list-box .team_list-box-face .img-hover-text:hover figcaption {
+          opacity: 1; }
+        .team .team_list .team_list-box .team_list-box-face .img-hover-text:hover img {
+          filter: brightness(30%); }
       .team .team_list .team_list-box .team_list-box-face .team_list-box-face-foto {
         width: 250px;
         height: 250px; }

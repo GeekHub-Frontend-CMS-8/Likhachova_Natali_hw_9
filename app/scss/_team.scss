@@ -42,6 +42,46 @@
       margin: 50px 5px 65px 5px;
       background-color: #C3C8CB;
       .team_list-box-face{
+        .img-hover-text {
+          width: 100%;
+          margin: 0;
+          position: relative;
+          img {
+            width: 100%;
+            transition: .5s;
+          }
+          figcaption {
+            position: absolute;
+            width: 80%;
+            bottom: 25%;
+            left: 10%;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 0;
+            border-radius: 10px;
+            transition: .5s;
+            .team_figcaption-text{
+              @include small-dark-font;
+              color: #fff;
+              margin-bottom: 15px;
+            }
+            .service_white-line::before {
+              content: '';
+              display: block;
+              height: 4px;
+              background-color: #C3C8CB;
+              margin-bottom: 40px;
+              margin-left: 60px;
+              width: 60px;
+            }
+          }
+          &:hover figcaption {
+            opacity: 1;
+          }
+          &:hover img {
+            filter: brightness(30%);
+          }
+        }
        .team_list-box-face-foto{
          width: 250px;
          height: 250px;

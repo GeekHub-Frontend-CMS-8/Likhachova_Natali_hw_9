@@ -91,6 +91,10 @@
           margin: 50px 0;
         }
       }
+      &:hover{
+        zoom: 130%;
+        border-top: 5px solid #000;
+      }
     }
   }
 }
@@ -132,6 +136,9 @@
             margin: 30px 0;
           }
         }
+        &:hover{
+          zoom: 120%;
+        }
       }
     }
   }
@@ -170,6 +177,9 @@
           .pricing_box-button{
             margin: 30px 0;
           }
+        }
+        &:hover{
+          zoom: 110%;
         }
       }
     }
